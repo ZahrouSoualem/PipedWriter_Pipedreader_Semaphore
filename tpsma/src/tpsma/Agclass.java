@@ -7,14 +7,20 @@ import java.util.Collections;
 import java.util.concurrent.Semaphore;
 import java.io.*;
 
+//Code AgClass.java
+
+//develope par : RSD G1
+
+
+
 public class Agclass {
-	static String classs ;
+	static String WhoAreYou ;
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		
 		try {
 			Semaphore sem = new Semaphore(1);
-			
+				
 			int num ;
 			PipedWriter pws = new PipedWriter();
 			PipedReader prt = new PipedReader();
@@ -41,12 +47,12 @@ public class Agclass {
 			
 			while((num = prt.read()) != -1) {
 				
-				if(classs.equals("Agsqr")) {
+				if(WhoAreYou.equals("Agsqr")) {
 					arraysqr.add(num);
-				}else if(classs.equals("Agfib")) {
+				}else if(WhoAreYou.equals("Agfib")) {
 					arrayfibo.add(num);
 				}
-				System.out.println( classs + " adds number  = "+ num);
+				System.out.println( WhoAreYou + " adds number  = "+ num);
 				array.add(num);
 				Collections.sort(array);
 				

@@ -6,6 +6,10 @@ import java.util.concurrent.Semaphore;
 import java.io.*;
 import java.lang.*;
 
+//Code Agsqr.java
+
+//develope par : RSD G1
+
 public class Agsqr implements Runnable{
 	
 	private PipedWriter pw;
@@ -32,7 +36,7 @@ public class Agsqr implements Runnable{
 			while(!vaiable){	
 				sem.acquire();
 				nsqr = number*number;
-				Agclass.classs="Agsqr";
+				Agclass.WhoAreYou="Agsqr";
 				pw.write(nsqr);		
 				Thread.sleep(1000);
 				

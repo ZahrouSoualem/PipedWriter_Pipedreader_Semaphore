@@ -6,6 +6,12 @@ import java.util.ArrayList;
 import java.util.Random;
 import java.util.concurrent.Semaphore;
 
+//Code Agfib.java
+
+//develope par : RSD G1
+
+
+
 public class Agfib implements Runnable {
 	
 	private PipedWriter pw;
@@ -33,7 +39,7 @@ public class Agfib implements Runnable {
 			boolean variable = false;
 			while(!variable){
 				sem.acquire();
-				Agclass.classs="Agfib";
+				Agclass.WhoAreYou="Agfib";
 	            pw.write(previousNumber);
 	             
 	            Thread.sleep(1000);
